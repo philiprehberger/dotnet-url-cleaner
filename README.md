@@ -1,5 +1,9 @@
 # Philiprehberger.UrlCleaner
 
+[![CI](https://github.com/philiprehberger/dotnet-url-cleaner/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/dotnet-url-cleaner/actions/workflows/ci.yml)
+[![NuGet](https://img.shields.io/nuget/v/Philiprehberger.UrlCleaner.svg)](https://www.nuget.org/packages/Philiprehberger.UrlCleaner)
+[![License](https://img.shields.io/github/license/philiprehberger/dotnet-url-cleaner)](LICENSE)
+
 Remove tracking parameters from URLs — strip UTM tags, fbclid, gclid, and more.
 
 ## Install
