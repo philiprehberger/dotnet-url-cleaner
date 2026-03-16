@@ -55,6 +55,12 @@ UrlCleaner.RemoveTracking("https://example.com/?utm_source=x#section");
 
 `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`, `fbclid`, `gclid`, `msclkid`, `mc_eid`, `ref`, `_ga`, `_gl`
 
+## Development
+
+```bash
+dotnet build src/Philiprehberger.UrlCleaner.csproj --configuration Release
+```
+
 ## License
 
 MIT
