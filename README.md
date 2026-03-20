@@ -42,6 +42,26 @@ UrlCleaner.RemoveTracking("https://example.com/?utm_source=x#section");
 // => "https://example.com/#section"
 ```
 
+### Custom Parameters
+
+```csharp
+using Philiprehberger.UrlCleaner;
+
+var url = "https://example.com/page?ref=twitter&session=abc123&id=42";
+var clean = UrlCleaner.RemoveTracking(url, new[] { "session" });
+// "https://example.com/page?id=42"
+```
+
+### Uri Overload
+
+```csharp
+using Philiprehberger.UrlCleaner;
+
+var uri = new Uri("https://example.com/page?utm_source=google&utm_medium=cpc&q=test");
+var clean = UrlCleaner.RemoveTracking(uri);
+// "https://example.com/page?q=test"
+```
+
 ## API
 
 ### `UrlCleaner`

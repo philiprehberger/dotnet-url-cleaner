@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5
+
+- Expand README with custom parameters and Uri overload examples
+- Add LangVersion and TreatWarningsAsErrors to csproj
+
 ## 0.1.4
 
 - Add Development section to README

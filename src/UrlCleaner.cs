@@ -2,6 +2,7 @@ using System.Web;
 
 namespace Philiprehberger.UrlCleaner;
 
+/// <summary>Removes common tracking and analytics query parameters from URLs.</summary>
 public static class UrlCleaner
 {
     private static readonly HashSet<string> DefaultTrackingParams = new(StringComparer.OrdinalIgnoreCase)
@@ -10,6 +11,10 @@ public static class UrlCleaner
         "fbclid", "gclid", "msclkid", "mc_eid", "ref", "_ga", "_gl"
     };
 
+    /// <summary>Removes tracking query parameters from the given URL string.</summary>
+    /// <param name="url">The absolute URL to clean.</param>
+    /// <param name="additionalParams">Optional extra parameter names to strip in addition to the defaults.</param>
+    /// <returns>The URL with tracking parameters removed.</returns>
     public static string RemoveTracking(string url, IEnumerable<string>? additionalParams = null)
     {
         if (string.IsNullOrEmpty(url))
@@ -21,6 +26,10 @@ public static class UrlCleaner
         return RemoveTracking(uri, additionalParams);
     }
 
+    /// <summary>Removes tracking query parameters from the given <see cref="Uri"/>.</summary>
+    /// <param name="uri">The URI to clean.</param>
+    /// <param name="additionalParams">Optional extra parameter names to strip in addition to the defaults.</param>
+    /// <returns>The URL with tracking parameters removed.</returns>
     public static string RemoveTracking(Uri uri, IEnumerable<string>? additionalParams = null)
     {
         var paramsToRemove = BuildParamSet(additionalParams);
