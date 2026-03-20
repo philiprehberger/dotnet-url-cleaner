@@ -6,7 +6,7 @@
 
 Remove tracking parameters from URLs — strip UTM tags, fbclid, gclid, and more.
 
-## Install
+## Installation
 
 ```bash
 dotnet add package Philiprehberger.UrlCleaner
