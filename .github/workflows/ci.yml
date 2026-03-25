@@ -17,6 +17,7 @@ jobs:
           dotnet-version: '8.0.x'
       - run: dotnet restore src/Philiprehberger.UrlCleaner.csproj
       - run: dotnet build src/Philiprehberger.UrlCleaner.csproj --configuration Release --no-restore
+      - run: dotnet test tests/Philiprehberger.UrlCleaner.Tests/Philiprehberger.UrlCleaner.Tests.csproj --configuration Release --no-restore
 
   publish:
     needs: build
