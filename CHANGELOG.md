@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.10 (2026-05-15)
+
+- Add NuGet package icon (`package-card.png`) — appears as the package icon on nuget.org
+
 ## 0.1.9 (2026-03-31)
 
 - Standardize README to 3-badge format with emoji Support section

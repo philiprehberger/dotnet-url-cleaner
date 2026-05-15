@@ -7,7 +7,7 @@
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <PackageId>Philiprehberger.UrlCleaner</PackageId>
-    <Version>0.1.9</Version>
+    <Version>0.1.10</Version>
     <Authors>Philip Rehberger</Authors>
     <Description>Remove tracking parameters from URLs — strip UTM tags, fbclid, gclid, and more.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -16,10 +16,12 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>url;tracking;privacy;utm;clean</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>package-card.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\package-card.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
